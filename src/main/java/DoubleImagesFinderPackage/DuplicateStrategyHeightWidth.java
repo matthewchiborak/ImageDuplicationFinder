@@ -84,6 +84,9 @@ public class DuplicateStrategyHeightWidth extends DuplicateStrategy {
 				} catch (IOException e) {
 					System.out.println("Bad File: " + child.getPath());
 					continue;
+				} catch (IllegalArgumentException e) {
+					System.out.println("Bad File Argument: " + child.getPath());
+					continue;
 				}
 		      
 		    }
